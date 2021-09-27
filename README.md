@@ -1,6 +1,8 @@
 # Project Title
 
-Sample python API
+Sample python API to generate database query from known input format.
+Currently, only SQL query is managed but we can image managing mongo queries later.
+How we can warn the api which query is requested ? I imagine to have a specific HTTP HEADER [ONGOING]
 
 ## Getting Started
 
