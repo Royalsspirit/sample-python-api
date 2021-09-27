@@ -4,7 +4,8 @@ from cerberus import Validator
 app = Flask(__name__)
 
 """
-define predicates allowed and its sql meaning
+define predicates allowed and its sql translation
+If mongo or other databases is needed, we could for each DB its own predicates syntaxe
 """
 predicates = {
     "gt": ">",
@@ -56,6 +57,9 @@ def toMysql(req):
 
 
 def validateInput(data):
+    """
+    Schema to validate input
+    """
     schema = {
         "fields": {
             'type': 'list',
